@@ -104,5 +104,5 @@ cleanup()
 
 # Script
 
-essential_packages && change_shell && install_font && ohmyzsh && powerlevel10k && zshrc_vimrc_vimplug && kitty && cleanup || error
+essential_packages && kitty && change_shell && install_font && ohmyzsh && powerlevel10k && zshrc_vimrc_vimplug && cleanup || error
 
