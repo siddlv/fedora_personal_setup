@@ -34,8 +34,8 @@ install_font()
     # Install Hack Nerd Font
     echo Installing Nerd Font
     
-    wget https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf?raw=true
-
+    wget https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack Regular Nerd Font Complete.ttf
+    
     mv 'Hack Regular Nerd Font Complete.ttf' $HOME/.local/share/fonts
 }
 
