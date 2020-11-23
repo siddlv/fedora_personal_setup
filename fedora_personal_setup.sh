@@ -88,6 +88,8 @@ kitty()
     ln -s ./kitty-themes/themes/gruvbox_dark.conf ~/.config/kitty/theme.conf
 
     wget https://raw.githubusercontent.com/siddlv/dotfiles/master/kitty.conf
+    
+    
 }
 
 error()
@@ -104,5 +106,5 @@ cleanup()
 
 # Script
 
-essential_packages && kitty && change_shell && install_font && ohmyzsh && powerlevel10k && zshrc_vimrc_vimplug && cleanup || error
+essential_packages && kitty && change_shell && install_font && ohmyzsh && zshrc_vimrc_vimplug && powerlevel10k && cleanup || error
 
