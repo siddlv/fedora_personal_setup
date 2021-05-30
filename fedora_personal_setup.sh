@@ -21,14 +21,6 @@ essential_packages()
     sudo dnf install zsh vim git neofetch nnn kitty util-linux-user kernel-devel gnome-tweaks -y
 }
 
-change_shell()
-{
-    # Change shell to zsh
-    echo Changing shell to zsh
-    
-    chsh -s $(which zsh)
-}
-
 ohmyzsh()
 {
     # Oh My Zsh and Plugins
@@ -96,5 +88,5 @@ cleanup()
 
 # Script
 
-essential_packages && kitty && change_shell && ohmyzsh && zshrc_vimrc_vimplug && powerlevel10k && cleanup || error
+essential_packages && kitty && ohmyzsh && zshrc_vimrc_vimplug && powerlevel10k && cleanup || error
 
