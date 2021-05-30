@@ -91,7 +91,7 @@ error()
 cleanup()
 {	
 	# Delete script, close terminal and exit
-	rm -r personal_setup.sh ; kill -9 $PPID ; exit 0
+	rm -r fedora_personal_setup.sh ; kill -9 $PPID ; exit 0
 }
 
 # Script
