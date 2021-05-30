@@ -29,16 +29,6 @@ change_shell()
     chsh -s $(which zsh)
 }
 
-install_font()
-{
-    # Install Hack Nerd Font
-    echo Installing Nerd Font
-    
-    wget https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
-    
-    mv 'Hack Regular Nerd Font Complete.ttf' $HOME/.local/share/fonts
-}
-
 ohmyzsh()
 {
     # Oh My Zsh and Plugins
@@ -89,7 +79,7 @@ kitty()
 
     wget https://raw.githubusercontent.com/siddlv/dotfiles/master/kitty.conf
     
-    
+    cd
 }
 
 error()
@@ -106,5 +96,5 @@ cleanup()
 
 # Script
 
-essential_packages && kitty && change_shell && install_font && ohmyzsh && zshrc_vimrc_vimplug && powerlevel10k && cleanup || error
+essential_packages && kitty && change_shell && ohmyzsh && zshrc_vimrc_vimplug && powerlevel10k && cleanup || error
 
